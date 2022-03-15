@@ -15,6 +15,8 @@ WSL
 - Operating System
 - Admin/Root level
 
+## Installation
+
 **Be sure to to follow the Microsoft [documentation](https://docs.microsoft.com/en-us/windows/terminal/tutorials/custom-prompt-setup) to set up your environment.**
 
 ### To Install for PowerShell
