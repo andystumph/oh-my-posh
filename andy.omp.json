@@ -1,5 +1,7 @@
 {
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
     "final_space": true,
+    "version": 2,
     "blocks": [
         {
             "type": "prompt",
@@ -11,22 +13,15 @@
                 "leading_diamond": "\ue0c7\u2593",
                 "foreground": "#000000",
                 "background": "#546E7A",
-                "properties": {
-                    "text": "",
-                    "postfix": "",
-                    "prefix": ""
-                }
-                },
+                "template": " \ufd31"
+                 },
                 {
                 "type": "kubectl",
                 "style": "powerline",
                 "powerline_symbol": "",
                 "foreground": "#000000",
                 "background": "#546E7A",
-                "properties": {
-                    "prefix": " \uFD31",
-                    "template": " {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}"
-                }
+                "template": " {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} "
                 },
                 {
                 "type": "az",
@@ -34,12 +29,7 @@
                 "powerline_symbol": "\uE0B0",
                 "foreground": "#000000",
                 "background": "#008AD7",
-                "properties": {
-                    "display_id": false,
-                    "display_name": true,
-                    "info_separator": " @ ",
-                    "prefix": " \uFD03 "
-                }
+                "template": " \ufd03 {{ .Name }}"
                 }
             ]
         },
@@ -54,9 +44,9 @@
                     "trailing_diamond": "\u2593\ue0c6",
                     "foreground": "#fafafa",
                     "background": "#546E7A",
+                    "template": " {{ .CurrentDate | date .Format }} \uf017 ",
                     "properties": {
-                        "time_format": "Mon, 02 Jan 2006 15:04:05 MST",
-                        "postfix": "<#007ACC> \uf64f </>"
+                        "time_format": "Mon, 02 Jan 2006 15:04:05 MST"
                     }
                 }
             ]
@@ -140,10 +130,7 @@
                     "type": "text",
                     "style": "plain",
                     "foreground": "#D75F00",
-                    "properties": {
-                        "text": "λ",
-                        "prefix": ""
-                    }
+                    "template": "λ"
                 }
             ]
         }

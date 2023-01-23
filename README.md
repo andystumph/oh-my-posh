@@ -21,20 +21,18 @@ WSL
 
 ### To Install for PowerShell
 - Clone this repo
-- Copy ```andy.omp.json``` to your theme directory at ```C:\Program Files\WindowsPowerShell\Modules\oh-my-posh\<version>\themes\```
+- Copy ```andy.omp.json``` to your home folder at ```~```
 - Run in PowerShell:
 
 ```
-Import-Module posh-git
-Import-Module oh-my-posh
-Set-PoshPrompt -Theme andy
+oh-my-posh.exe init powershell -c ~\andy.omp.json | Invoke-Expression
 ```
 
 - Optionally, add the above commands to your ```$PROFILE```
 
 ### To Install for WSL
 - Clone this repo
-- Copy ```andy.omp.json``` to home folder ```~```
+- Copy ```andy.omp.json``` to your home folder ```~```
 - Run in bash:
 
 ```
